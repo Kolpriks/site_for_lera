@@ -1,0 +1,30 @@
+.test{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.header_photo{
+    background: url("../images/header_photo_example_pink.jpg") no-repeat top center; 
+    background-size: cover;
+    position: relative;
+    height: 70vh;
+    @media (max-width: 768px) {
+        height: 100vh;
+    }
+}
+
+.header_photo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
