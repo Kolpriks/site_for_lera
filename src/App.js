@@ -1,4 +1,5 @@
 import { Header } from "./components/Header";
+import WhyAs from "./components/WhyUs";
 
 
 function App() {
@@ -6,10 +7,9 @@ function App() {
     <div>
       <header>
         <Header/>
-        <p>
-          Edit and save to reload.
-        </p>
+
       </header>
+			<WhyAs/>
     </div>
   );
 }
