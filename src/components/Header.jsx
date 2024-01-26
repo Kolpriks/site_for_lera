@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Header.css'
 import logo from '../images/logo4.png'
+import ModalWindow from '../modal/ModalWindow'
 
 export const Header = () => {
+	const [modalIsopen, setModalIsOpen] = useState(false)
+
+	const openModal = () => {
+		setModalIsOpen(true);
+	};
+
+	const closeModal = () => {
+		setModalIsOpen(false);
+	};
+
   return (
     <>
       <div className='container'>
@@ -39,8 +50,9 @@ export const Header = () => {
 					</div>
 
 					<div className='buttons'>
-						<a className='left-button'>ПОРТФОЛИО</a>
-						<a className='right-button'>ОСТАВИТЬ ЗАЯВКУ</a>
+						<button className='left-button'>ПОРТФОЛИО</button>
+						<button onClick={openModal} className='right-button'>ОСТАВИТЬ ЗАЯВКУ</button>
+						<ModalWindow isOpen={modalIsopen} closeModal={closeModal} />
 					</div>
 
 				</div>
