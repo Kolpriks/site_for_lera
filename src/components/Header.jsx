@@ -1,23 +1,56 @@
 import React, { useState } from 'react'
 import './Header.css'
 import logo from '../images/logo4.png'
-import ModalWindow from '../modal/ModalWindow'
+import axios from 'axios'
+// import ModalWindow from '../modal/ModalWindow'
+import Modal from '../modal/Modal'
+
+
+const sendMessageToTelegram = async (chatId, message) => {
+	const telegramToken = `https://api.telegram.org/bot6315239778:AAHYQ6_s4TptAIYzXA2StoK0LYdyVgF3_fc/sendMessage`;
+
+	try {
+		await axios.post(telegramToken, {
+			chat_id: chatId,
+			text: message,
+		});
+
+		console.log('Message sent to Telegram successfully');
+	} catch (error) {
+		console.error('Error sending message to Telegram:', error.message);
+	}
+};
+
 
 export const Header = () => {
-	const [modalIsopen, setModalIsOpen] = useState(false)
+	
+	const [modalActive, setModalActive] = useState(false)
+	const [name, setName] = useState('');
+	const [phone, setPhone] = useState('');
+	const [message, setMessage] = useState('');
 
-	const openModal = () => {
-		setModalIsOpen(true);
+	
+
+	const handleFormSubmit = async (e) => {
+		e.preventDefault();
+
+		const chatId = '-4128263263';
+
+		const fullMessage = `Новый заказ:\nФИО: ${name}\nТелефон: ${phone}\nСообщение: ${message}`;
+
+		await sendMessageToTelegram(chatId, fullMessage);
+
+		// Очистка состояния
+		setName('');
+		setPhone('');
+		setMessage('');
+		setModalActive(false);
 	};
 
-	const closeModal = () => {
-		setModalIsOpen(false);
-	};
-
-  return (
-    <>
-      <div className='container'>
-        <div className='header_photo'>
+	return (
+		<>
+			<div className='container'>
+				<div className='header_photo'>
 					<div className='navigation__wrapper'>
 
 						<nav>
@@ -51,8 +84,48 @@ export const Header = () => {
 
 					<div className='buttons'>
 						<button className='left-button'>ПОРТФОЛИО</button>
-						<button onClick={openModal} className='right-button'>ОСТАВИТЬ ЗАЯВКУ</button>
-						<ModalWindow isOpen={modalIsopen} closeModal={closeModal} />
+						<button className='right-button' onClick={() => setModalActive(true)} >ОСТАВИТЬ ЗАЯВКУ</button> 
+						{/* onClick={openModal} */}
+
+						<Modal active={modalActive} setActive={setModalActive}>
+						<form onSubmit={handleFormSubmit} className='modal-form'>
+							<label htmlFor="name">ФИО:</label>
+							<input
+								type="text"
+								id="name"
+								value={name}
+								onChange={(e) => setName(e.target.value)}
+								placeholder='Иванов Иван'
+								required
+							/>
+
+							<label htmlFor="phone">Телефон:</label>
+							<input
+								type="tel"
+								id="phone"
+								value={phone}
+								placeholder='+7 999 000 00 00'
+								onChange={(e) => setPhone(e.target.value)}
+								required
+							/>
+
+							<label htmlFor="message">Сообщение:</label>
+							<textarea
+								id="message"
+								value={message}
+								placeholder='Что будем снимать?'
+								onChange={(e) => setMessage(e.target.value)}
+							/>
+
+							<button type="submit">Отправить</button>
+
+							<p className='policy'>Нажимая на кнопку, вы даете согласие на обработку своих персональных данных</p>
+							
+
+
+        </form>
+						</Modal>
+						{/* <ModalWindow isOpen={modalIsopen} closeModal={closeModal} /> */}
 					</div>
 
 				</div>
@@ -60,4 +133,3 @@ export const Header = () => {
 		</>
 	)
 }
-

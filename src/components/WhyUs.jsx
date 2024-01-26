@@ -16,14 +16,14 @@ const WhyUs = () => {
 	const textTwoAccent = 'Индивидуальный подход к каждому проекту'
 	const textTwo = 'Наши фотографы тщательно изучают особенности объекта и предметов, чтобы создать индивидуальный и запоминающийся образ.'
 	return (
-		<div className='wrap'>
+		<div className='wrap' id='whyus'>
 
 			<div className="position-relative">
-				<img className="corner-image top-left" src={left_top_corner} alt="Изображение 1" />
-				<img className="corner-image top-right" src={rigth_top_corner} alt="Изображение 2" />
+				<img className="corner-image top-left" src={left_top_corner} alt="top-left" />
+				<img className="corner-image top-right" src={rigth_top_corner} alt="top-right" />
 			</div>
 
-			<h2 >Почему мы?</h2>
+			<h2>Почему мы?</h2>
 
 			<div className='cards'>
 				<WhyUsCard text1={textTwoAccent} text2={textTwo} frame={svgFrame}/>
@@ -41,8 +41,8 @@ const WhyUs = () => {
 
 			<div className="position-relative">
 				
-				<img className="corner-image bottom-left" src={left_bottom_corner} alt="Изображение 3" />
-				<img className="corner-image bottom-right" src={rigth_bottom_corner}  alt="Изображение 4" />
+				<img className="corner-image bottom-left" src={left_bottom_corner} alt="bottom-left" />
+				<img className="corner-image bottom-right" src={rigth_bottom_corner}  alt="bottom-right" />
 			</div>
 
 		</div>

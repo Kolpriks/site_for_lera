@@ -4,16 +4,14 @@
 }
 
 .header_photo{
-		background: url("../images/primer.jpg") no-repeat top center; 
-		background-size: cover;
-		position: relative;
-		height: 100vh;
-		@media (max-width: 768px) {
-				height: 100vh;
-		}
+	background: url("../images/header_photo_example_pink.jpg") no-repeat top center; 
+	background-size: cover;
+	position: relative;
+	height: 100vh;
+	@media (max-width: 768px) {
+			height: 100vh;
+	}
 }
-
-
 
 .header_photo::before {
 	content: "";
@@ -42,7 +40,7 @@ nav {
 
 nav a {
   margin: 0 30px;
-	margin-bottom: 50px;
+	margin-bottom: 80px;
   color: white;
 	font-size: 24px;
   text-decoration: none;
@@ -67,6 +65,11 @@ nav a {
 	font-family: 'Merriweather', serif;
 	font-weight: 500;
 	letter-spacing: 1px;
+	margin-top: 40px;
+	@media (max-width: 1700px) {
+		font-size: 30px;
+		margin-top: 20px;
+	}
 }
 
 .capability{
@@ -75,7 +78,11 @@ nav a {
 	display: inline-block;
 	position: relative;
 	padding: 0;
-	margin-top: 50px;
+	margin-top: 100px;
+	@media (max-width: 1700px) {
+		margin-top: 50px;
+	}
+	
 }
 
 .capability li{
@@ -85,6 +92,9 @@ nav a {
 	font-size: 28px;
 	list-style: none;
 	text-decoration: none;
+	@media (max-width: 1700px) {
+		font-size: 24px;
+	}
 }
 
 .logo {
@@ -97,6 +107,10 @@ nav a {
 	display: flex;
 	margin-top: 30px;
 	padding: 100px;
+	@media (max-width: 1700px) {
+		padding: 50px;
+		
+	}
 }
 
 .left-button{
@@ -108,6 +122,8 @@ nav a {
 	z-index: 2;
 	font-family: 'Roboto', sans-serif;
 	transition: ease-in-out 0.5s;
+	font-size: 18px;
+	
 }
 
 .right-button{
@@ -117,10 +133,12 @@ nav a {
 	color: black;
 	border: 2px solid white;
 	z-index: 2;
-	margin-left: 40px;
+	margin-left: 50px;
 	font-family: 'Roboto', sans-serif;
 	text-decoration: none;
 	transition: ease-in-out 0.5s;
+	font-size: 18px;
+	
 }
 
 .right-button:hover{
@@ -131,4 +149,58 @@ nav a {
 .left-button:hover{
 	box-shadow: 1px 1px 20px 10px rgba(255, 255, 255, 0.2);
 	transition: ease-in-out 0.5s;
+}
+
+/* Modal css */
+
+.modal-p{
+	font-size: 20px;
+	text-transform: uppercase;
+	
+	text-align: center;
+}
+
+.modal-form{
+	display: flex;
+  flex-direction: column;
+	justify-content: space-between;
+	width: 300px;
+	& label{
+		font-size: 20px;
+		font-family: 'Roboto', sans-serif;
+	}
+	& input{
+		margin-bottom: 30px;
+		margin-top: 10px;
+		line-height: 30px;
+		font-size: 16px;
+	}
+	& textarea{
+		max-width: 300px;
+		margin-bottom: 20px;
+		line-height: 40px;
+		margin-top: 10px;
+		font-size: 16px;
+	}
+	& button{
+		background-color: rgb(87, 201, 87);
+		border: 1px solid rgb(87, 201, 87);
+		border-radius: 8px;
+		margin: 10px 0px;
+		padding: 10px 10px;
+		transition: ease-in-out 0.3s;
+		font-size: 16px;
+	}
+	& button:hover{
+		background-color: rgba(255, 255, 255, 0.9);
+		transition: ease-in-out 0.3s;
+	}
+}
+
+.policy{
+	font-size: 12px;
+	text-align: center;
+	margin-top: 10px;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
 }
