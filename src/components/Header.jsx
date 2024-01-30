@@ -1,16 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
 import './Header.css'
 import logo from '../images/logo4.png'
 import axios from 'axios'
 // import ModalWindow from '../modal/ModalWindow'
 import Modal from '../modal/Modal'
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+
 
 
 const sendMessageToTelegram = async (chatId, message) => {
 	const telegramToken = `https://api.telegram.org/bot6315239778:AAHYQ6_s4TptAIYzXA2StoK0LYdyVgF3_fc/sendMessage`;
 
 	try {
-		await axios.post(telegramToken, {
+		await axios.post(telegramToken, { 
 			chat_id: chatId,
 			text: message,
 		});
@@ -28,8 +30,8 @@ export const Header = () => {
 	const [name, setName] = useState('');
 	const [phone, setPhone] = useState('');
 	const [message, setMessage] = useState('');
+	const [nav, setNav] = useState(false);
 
-	
 
 	const handleFormSubmit = async (e) => {
 		e.preventDefault();
@@ -47,25 +49,54 @@ export const Header = () => {
 		setModalActive(false);
 	};
 
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    // Обработчик изменения размера экрана
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Добавляем слушатель события изменения размера экрана
+    window.addEventListener('resize', handleResize);
+
+    // Очищаем слушатель события при размонтировании компонента
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+	const ulClasses = windowWidth > 800 ? 'menu' : 'mobile-menu';
+
+	const finalUlClasses = ulClasses === 'mobile-menu' && nav ? `${ulClasses} active` : ulClasses;
+	
 	return (
 		<>
-			<div className='container'>
-				<div className='header_photo'>
-					<div className='navigation__wrapper'>
-
-						<nav>
+		<div className='container'>
+			<div className='header_photo'>
+				<div className='navigation__wrapper'>
+					<img src={logo} className='logo-mobile' />
+					<ul className={finalUlClasses}>
+						<li>
 							<a href='/'>ЦЕНЫ</a>
+						</li>
+						<li>
 							<a href='/'>ПОРТФОЛИО</a>
-						</nav>
-
-						<img src={logo} className='logo'/>
-						
-						<nav>
+						</li>
+						<img src={logo} className='logo' />
+						<li>
 							<a href='/'>ПРАВИЛА</a>
+						</li>
+						<li>
 							<a href='/'>КОНТАКТЫ</a>
-						</nav>
+						</li>
+					</ul>
 
+					<div className={nav ? ['mobile-btn', 'mobile-btn-active'].join(' ') : ['mobile-btn']} onClick={() => setNav(!nav)}>
+						{nav ? <AiOutlineClose size={50} /> : <AiOutlineMenu size={50} />}
 					</div>
+				</div>
+
 
 					<div className='header__text__wrapper'>
 						<div>

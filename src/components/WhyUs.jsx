@@ -40,7 +40,6 @@ const WhyUs = () => {
 			</div>
 
 			<div className="position-relative">
-				
 				<img className="corner-image bottom-left" src={left_bottom_corner} alt="bottom-left" />
 				<img className="corner-image bottom-right" src={rigth_bottom_corner}  alt="bottom-right" />
 			</div>

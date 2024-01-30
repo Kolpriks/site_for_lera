@@ -7,6 +7,9 @@
   max-width: 100%;
   height: auto;
   display: block;
+	@media (max-width: 1700px) {
+		max-width: 70%;
+	}
 }
 
 .why-us-text-container {

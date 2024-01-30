@@ -1,5 +1,6 @@
 import { Header } from "./components/Header";
 import WhyAs from "./components/WhyUs";
+import Lorem from "./components/Lorem";
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
 
       </header>
 			<WhyAs/>
+			<Lorem/>
     </div>
   );
 }
