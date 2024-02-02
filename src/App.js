@@ -1,17 +1,15 @@
 import { Header } from "./components/Header";
+import Portfolio from "./components/portfolio/Portfolio";
 import WhyAs from "./components/WhyUs";
-import Lorem from "./components/Lorem";
-
 
 function App() {
   return (
     <div>
       <header>
         <Header/>
-
       </header>
 			<WhyAs/>
-			<Lorem/>
+			<Portfolio/>
     </div>
   );
 }

@@ -1,15 +1,30 @@
 .why-us-card {
   position: relative;
-  display: inline-block;
+  overflow: hidden;
+	margin: 20px;
 }
+
+.why-us-img {
+	width: 100%;
+	height: auto;
+	display: block;
+
+  @media (max-width: 1700px) {
+    max-width: 80%;
+  }
+  @media (max-width: 1500px) {
+    max-width: 70%;
+  }
+  @media (max-width: 1200px) {
+    max-width: 50%;
+  }
+}
+
 
 .why-us-img {
   max-width: 100%;
   height: auto;
   display: block;
-	@media (max-width: 1700px) {
-		max-width: 70%;
-	}
 }
 
 .why-us-text-container {
@@ -18,17 +33,34 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+	width: 50px;
   color: black;
+  box-sizing: border-box;
+  padding: 20px;
   width: 100%;
-  margin: 0; 
+	@media (max-width: 1700px) {
+    padding: 5px;
+	}
 }
 
 .why-us-text-container p {
-  margin: 0; 
-	font-family: 'Open Sans', sans-serif;
-	font-size: 22px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+	@media (max-width: 800px){
+		font-size: 18px;
+	}
+	@media (max-width: 600px){
+		font-size: 16px;
+	}
+	@media (max-width: 500px){
+		font-size: 14px;
+	}
+	@media (max-width: 430px){
+		font-size: 10px;
+	}
 }
 
-.accent{
-	color: #FFA800;
+.accent {
+  color: #FFA800;
 }

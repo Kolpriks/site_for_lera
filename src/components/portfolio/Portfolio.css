@@ -1,0 +1,33 @@
+.portfolio-container__wrap{
+	margin-top: 200px;
+	& p{
+		text-align: center;
+		font-size: 50px;
+		text-transform: uppercase;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 500;
+		padding-bottom: 50px;
+		@media (max-width: 1700px){
+			padding-bottom: 50px;
+		}
+	}
+}
+
+.portfolio-container {
+	margin-top: 10px;
+	display: flex;
+	position: relative;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	@media (max-width: 801px){
+		flex-direction: column;
+		max-width: 80%;
+		margin: auto;
+		gap: 20px;
+		padding-top: 20px;
+	}
+}
+
+

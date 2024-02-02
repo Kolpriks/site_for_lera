@@ -25,7 +25,7 @@ const WhyUs = () => {
 
 			<h2>Почему мы?</h2>
 
-			<div className='cards'>
+			<div className='cards cards-top'>
 				<WhyUsCard text1={textTwoAccent} text2={textTwo} frame={svgFrame}/>
 				<WhyUsCard text1={textOneAccent} text2={textOne} frame={svgFrame}/>
 			</div>
@@ -43,7 +43,6 @@ const WhyUs = () => {
 				<img className="corner-image bottom-left" src={left_bottom_corner} alt="bottom-left" />
 				<img className="corner-image bottom-right" src={rigth_bottom_corner}  alt="bottom-right" />
 			</div>
-
 		</div>
 
 	)

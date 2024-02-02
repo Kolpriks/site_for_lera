@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './Header.css'
 import logo from '../images/logo4.png'
 import axios from 'axios'
-// import ModalWindow from '../modal/ModalWindow'
 import Modal from '../modal/Modal'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
@@ -52,15 +51,12 @@ export const Header = () => {
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    // Обработчик изменения размера экрана
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
 
-    // Добавляем слушатель события изменения размера экрана
     window.addEventListener('resize', handleResize);
 
-    // Очищаем слушатель события при размонтировании компонента
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -156,7 +152,6 @@ export const Header = () => {
 
         </form>
 						</Modal>
-						{/* <ModalWindow isOpen={modalIsopen} closeModal={closeModal} /> */}
 					</div>
 
 				</div>
