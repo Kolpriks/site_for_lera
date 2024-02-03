@@ -15,6 +15,11 @@
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
   }
+	@media (max-width: 1200px){
+		& h2{
+			font-size: 30px;
+		}
+	}
 }
 
 .centered-container {
@@ -46,6 +51,12 @@ img {
 		flex-direction: column;
 		justify-content: center;
 		max-width: 80%;
+	}
+	@media (max-width: 500px) {
+		max-width: 95%;
+	}
+	@media (max-width: 350px) {
+		max-width: 100%;
 	}
 }
 

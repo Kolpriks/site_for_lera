@@ -118,7 +118,7 @@ const Portfolio = () => {
 
 	return (
 		<div className='portfolio-container__wrap'>
-			<p>Наше Портфолио</p>
+			<h1>Наше Портфолио</h1>
 			{photoRows.map((row, rowIndex) => (
 				<div key={rowIndex} className='portfolio-container'>
 					{row.map((image, index) => (
