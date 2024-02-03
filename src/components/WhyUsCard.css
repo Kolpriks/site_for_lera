@@ -8,24 +8,8 @@
 	width: 100%;
 	height: auto;
 	display: block;
-
-  @media (max-width: 1700px) {
-    max-width: 80%;
-  }
-  @media (max-width: 1500px) {
-    max-width: 70%;
-  }
-  @media (max-width: 1200px) {
-    max-width: 50%;
-  }
 }
 
-
-.why-us-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
 
 .why-us-text-container {
   position: absolute;
