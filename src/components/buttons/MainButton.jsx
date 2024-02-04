@@ -78,7 +78,7 @@ const MainButton = ({ onModalToggle, text, type }) => {
 
 							<button type="submit">Отправить</button>
 
-							<p className='policy'>Нажимая на кнопку, вы даете согласие на обработку своих персональных данных</p>
+							<h3 className='policy'>Нажимая на кнопку, вы даете согласие на обработку своих персональных данных</h3>
 
 
 						</form>
