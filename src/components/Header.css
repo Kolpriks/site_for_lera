@@ -1,16 +1,13 @@
 .container{
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 }
 
 .header_photo{
 	background: url("../images/header_photo_example_pink.jpg") no-repeat top center; 
 	background-size: cover;
 	position: relative;
-	height: 100vh;
-	@media (max-width: 768px) {
-			height: 100vh;
-	}
+	height: 100%;
 }
 
 .header_photo::before {
@@ -235,7 +232,7 @@
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
-	padding-bottom: 200px;
+	padding-bottom: 150px;
 	@media (max-width: 1700px) {
 		padding-bottom: 100px;
 	}

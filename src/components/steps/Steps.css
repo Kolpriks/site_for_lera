@@ -233,3 +233,20 @@
 		display: none;
 	}
 }
+
+
+.arrow-rigth{
+	height: 500px;
+	@media (max-width: 1400px){
+		height: 400px;
+	}
+	@media (max-width: 1200px){
+		height: 350px;
+	}
+	@media (max-width: 900px){
+		height: 250px;
+	}
+	@media (max-width: 500px){
+		display: none;
+	}
+}

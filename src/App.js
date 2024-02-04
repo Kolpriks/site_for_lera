@@ -1,17 +1,17 @@
 import { Header } from "./components/Header";
 import Portfolio from "./components/portfolio/Portfolio";
+import Price from "./components/price/Price";
 import Steps from "./components/steps/Steps";
 import WhyAs from "./components/WhyUs";
 
 function App() {
   return (
-    <div>
-      <header>
-        <Header/>
-      </header>
+    <div className="All">
+			<Header/>
 			<WhyAs/>
 			<Portfolio/>
 			<Steps/>
+			<Price/>
     </div>
   );
 }

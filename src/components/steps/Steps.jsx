@@ -21,7 +21,7 @@ const Steps = () => {
 				</div>
 
 				<div className='step-second'>
-					<img src={arrowLeft} className='arrow' alt='arrow left'/>
+					<img src={arrowLeft} className='arrow-rigth' alt='arrow left'/>
 					<div className='step__text-second'>
 					<h2>02 Брифинг</h2>
 					<p>Организовываем созвон на 30 минут после которого мы:</p>
