@@ -11,10 +11,16 @@ import rigth_bottom_corner from '../images/rigth_bottom_corner.svg'
 
 const WhyUs = () => {
 	const textOneAccent = 'Современное оборудование и технологии'
-	const textOne = 'Включает в себя использование профессиональных камер, освещения и программного обеспечения.'
+	const textOne = 'Включает в себя использование профессиональных камер, освещения и программного обеспечения'
 
 	const textTwoAccent = 'Индивидуальный подход к каждому проекту'
-	const textTwo = 'Наши фотографы тщательно изучают особенности объекта и предметов, чтобы создать индивидуальный и запоминающийся образ.'
+	const textTwo = 'Наши фотографы тщательно изучают особенности объекта и предметов, чтобы создать индивидуальный и запоминающийся образ'
+	
+	const textThreeAccent = 'Разнообразие стилей и подходов'
+	const textThree = 'Наша команда фотографов владеет различными стилями и подходами к предметной съемке'
+	
+	const textFourAccent = 'Профессиональные фотографы с опытом'
+	const textFour = 'Наши специалисты обеспечивают высокий уровень мастерства и профессионализма, предоставляют качественные и эстетичные изображения'
 	return (
 		<div className='wrap' id='whyus'>
 
@@ -35,8 +41,8 @@ const WhyUs = () => {
 			</div>
 
 			<div className='cards'>
-				<WhyUsCard text1={textTwoAccent} text2={textTwo} frame={svgFrame}/>
-				<WhyUsCard text1={textOneAccent} text2={textOne} frame={svgFrame}/>
+				<WhyUsCard text1={textThreeAccent} text2={textThree} frame={svgFrame}/>
+				<WhyUsCard text1={textFourAccent} text2={textFour} frame={svgFrame}/>
 			</div>
 
 			<div className="position-relative">
