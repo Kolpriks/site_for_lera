@@ -4,7 +4,8 @@ import Modal from './modal/Modal';
 import axios from 'axios';
 
 const sendMessageToTelegram = async (chatId, message) => {
-	const telegramToken = `https://api.telegram.org/bot6315239778:AAHYQ6_s4TptAIYzXA2StoK0LYdyVgF3_fc/sendMessage`;
+	const telegramToken = 
+	`https://api.telegram.org/bot6315239778:AAHYQ6_s4TptAIYzXA2StoK0LYdyVgF3_fc/sendMessage`;
 
 	try {
 		await axios.post(telegramToken, {
@@ -78,8 +79,8 @@ const MainButton = ({ onModalToggle, text, type }) => {
 
 							<button type="submit">Отправить</button>
 
-							<h3 className='policy'>Нажимая на кнопку, вы даете согласие на обработку своих персональных данных</h3>
-
+							<h3 className='policy'>Нажимая на кнопку, 
+							вы даете согласие на обработку своих персональных данных</h3>
 
 						</form>
 					</Modal>

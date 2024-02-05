@@ -62,10 +62,10 @@
 		width: 300px;
 		height: 500px;
 	}
-	@media (max-width: 300px){
+	/* @media (max-width: 300px){
 		width: 200px;
 		height: 335px;
-	}
+	} */
 }
 
 
@@ -90,10 +90,10 @@
 		width: 300px;
 		height: 500px;
 	}
-	@media (max-width: 300px){
+	/* @media (max-width: 300px){
 		width: 200px;
 		height: 335px;
-	}
+	} */
 }
 
 .price-card__contur{
