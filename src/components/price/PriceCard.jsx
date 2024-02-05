@@ -12,8 +12,8 @@ const PriceCard = ({name, price, typeOfCard, typeOfButton}) => {
 			: ['price-card__text', 'white'].join(' ')}>
 				<p className='name'>{name}</p>
 				<p className='price'>{price}</p>
-				<MainButton onModalToggle={(modalState) => setModalActive(modalState)} 
-				text='Заявка' type={typeOfButton} />
+				{/* <MainButton onModalToggle={(modalState) => setModalActive(modalState)} 
+				text='Заявка' type={typeOfButton} /> */}
 			</div>
 		</div>
 	)
