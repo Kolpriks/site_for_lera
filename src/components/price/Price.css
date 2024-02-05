@@ -50,7 +50,7 @@
 		width: 280px;
 		height: 465px;
 	}
-	@media (max-width: 1600px){
+	/* @media (max-width: 1600px){
 		width: 250px;
 		height: 415px;
 	}
@@ -65,7 +65,7 @@
 	@media (max-width: 300px){
 		width: 200px;
 		height: 335px;
-	}
+	} */
 }
 
 
@@ -78,7 +78,7 @@
 		width: 280px;
 		height: 465px;
 	}
-	@media (max-width: 1600px){
+	/* @media (max-width: 1600px){
 		width: 250px;
 		height: 415px;
 	}
@@ -93,7 +93,7 @@
 	@media (max-width: 300px){
 		width: 200px;
 		height: 335px;
-	}
+	} */
 }
 
 .price-card__contur{
