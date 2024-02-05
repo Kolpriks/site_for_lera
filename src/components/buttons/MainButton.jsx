@@ -33,7 +33,6 @@ const MainButton = ({ onModalToggle, text, type }) => {
 
 		await sendMessageToTelegram(chatId, fullMessage);
 
-		// Clear state
 		setName('');
 		setPhone('');
 		setMessage('');

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import PriceButton from '../buttons/PriceButton'
 import './Price.css'
 import MainButton from '../buttons/MainButton'
 
