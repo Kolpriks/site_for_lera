@@ -4,8 +4,8 @@ import PriceCard from './PriceCard'
 
 const Price = () => {
 	return (
-		<div className='price-container__wrap'>
-			<h1>Прайс</h1>
+		<div className='price-container__wrap' id='price'>
+			<h2>Прайс</h2>
 			<div className='price-container'>
 				<div className='price-card'>
 					<PriceCard name='Съемка на католог с выездом' price='350p \ фото' typeOfCard='white' typeOfButton='white-button'/>

@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css'
 import logo from '../images/logo4.png'
-import axios from 'axios'
-import Modal from './buttons/modal/Modal'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import MainButton from './buttons/MainButton'
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 export const Header = () => {
 	
@@ -31,7 +30,10 @@ export const Header = () => {
 		};
 	}, []);
 
-	
+	const closeNav = () => {
+		setNav(false);
+	};
+
 	return (
 	<div className='container'>
 		<div className='header_photo'>
@@ -39,17 +41,25 @@ export const Header = () => {
 				<img src={logo} className='logo-mobile' />
 				<ul className={finalUlClasses}>
 					<li>
-						<a href='/'>ЦЕНЫ</a>
+						<Link to="price" smooth={true} duration={1000}>
+							<a onClick={closeNav}>ЦЕНЫ</a>
+						</Link>
 					</li>
 					<li>
-						<a href='/'>ПОРТФОЛИО</a>
+						<Link to="portfolio" smooth={true} duration={1000}>
+							<a onClick={closeNav}>ПОРТФОЛИО</a>
+						</Link>
 					</li>
 					<img src={logo} className='logo' />
 					<li>
-						<a href='/'>ПРАВИЛА</a>
+						<Link to="team" smooth={true} duration={1000}>
+							<a onClick={closeNav}>КОМАНДА</a>
+						</Link>
 					</li>
 					<li>
-						<a href='/'>КОНТАКТЫ</a>
+						<Link to="footer" smooth={true} duration={1500}>
+							<a onClick={closeNav}>КОНТАКТЫ</a>
+						</Link>
 					</li>
 				</ul>
 
@@ -75,7 +85,10 @@ export const Header = () => {
 				</div>
 
 				<div className='buttons'>
-					<button className='left-button'>ПОРТФОЛИО</button>
+					<Link to="portfolio" smooth={true} duration={1000}>
+						<button className='left-button'>ПОРТФОЛИО</button>
+					</Link>
+					
 					<MainButton onModalToggle={(modalState) => setModalActive(modalState)} text='ОСТАВИТЬ ЗАЯВКУ' type='right-button' />
 				</div>
 
@@ -83,51 +96,3 @@ export const Header = () => {
 		</div>
 	)
 }
-
-
-
-
-
-
-
-
-
-
-{/* <Modal active={modalActive} setActive={setModalActive}>
-						<form onSubmit={handleFormSubmit} className='modal-form'>
-							<label htmlFor="name">ФИО:</label>
-							<input
-								type="text"
-								id="name"
-								value={name}
-								onChange={(e) => setName(e.target.value)}
-								placeholder='Иванов Иван'
-								required
-							/>
-
-							<label htmlFor="phone">Телефон:</label>
-							<input
-								type="tel"
-								id="phone"
-								value={phone}
-								placeholder='+7 999 000 00 00'
-								onChange={(e) => setPhone(e.target.value)}
-								required
-							/>
-
-							<label htmlFor="message">Сообщение:</label>
-							<textarea
-								id="message"
-								value={message}
-								placeholder='Что будем снимать?'
-								onChange={(e) => setMessage(e.target.value)}
-							/>
-
-							<button type="submit">Отправить</button>
-
-							<p className='policy'>Нажимая на кнопку, вы даете согласие на обработку своих персональных данных</p>
-							
-
-
-						</form>
-					</Modal> */}

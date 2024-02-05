@@ -18,7 +18,7 @@ import rigth_bottom_corner from './images/rigth_bottom_corner.svg'
 
 const Team = () => {
 	return (
-		<div className='team-container'>
+		<div className='team-container' id='team'>
 			<div className="position-relative">
 				<img className="corner-image top-left" src={left_top_corner} alt="top-left" />
 				<img className="corner-image top-right" src={rigth_top_corner} alt="top-right" />

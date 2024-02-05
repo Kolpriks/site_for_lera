@@ -1,10 +1,18 @@
 .price-container__wrap{
 	text-align: center;
 	padding-top: 50px;
-	& h1{
-		font-size: 50px;
-		text-transform: uppercase;
-		font-family: 'Open Sans', sans-serif;
+	& h2 {
+    font-size: 50px;
+		padding-top: 40px;
+    padding-bottom: 50px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+  }
+	@media (max-width: 1200px){
+		& h2{
+			font-size: 30px;
+		}
 	}
 }
 

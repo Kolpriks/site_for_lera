@@ -117,7 +117,7 @@ const Portfolio = () => {
 	}, [photoDimensions, windowWidth]);
 
 	return (
-		<div className='portfolio-container__wrap'>
+		<div id="portfolio" className='portfolio-container__wrap'>
 			<h1>Наше Портфолио</h1>
 			{photoRows.map((row, rowIndex) => (
 				<div key={rowIndex} className='portfolio-container'>
