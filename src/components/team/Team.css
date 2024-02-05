@@ -158,5 +158,10 @@
 
 .accent-name{
 	color: #FFA800;
-	font-size: 28px;
+	font-size: 25px !important;
+}
+
+
+.team-card-position{
+	font-style: italic;
 }
