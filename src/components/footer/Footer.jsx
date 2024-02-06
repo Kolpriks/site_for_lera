@@ -21,22 +21,22 @@ const Footer = () => {
 	};
 	return (
 		<div className='footer__wrap' id='footer'>
-            <div className='footer-container'>
-                <div className='footer'>
-                    <h2>Связаться с нами:</h2>
-                    <p className='footer-text' onClick={handleTelegramClick}><FaTelegramPlane size={15} /> @Croha007</p>
-                    <p className='footer-text' onClick={handlePhoneClick}><FaPhoneAlt size={15}/> 8-(905)-712-21-95</p>
-                    <p className='footer-text'><IoIosMail size={15}/> 0_cheese_0@mail.ru</p>
-                    <p className='footer-text' onClick={handleWhatsappClick}><FaWhatsapp size={15}/> 8-(905)-712-21-95</p>
-                </div>
-                <div className='separator'></div>
-                <div className='footer'>
-                    <h2>Другие контакты:</h2>
-                    <p className='footer-text'><FaTelegramPlane size={15} /> @istomin_portfolio</p>
-                    <p className='footer-text'>Сайт сделал: <br/><FaTelegramPlane size={15} />@Kolpriks</p>
-                </div>
-            </div>
-        </div>
+			<div className='footer-container'>
+				<div className='footer'>
+					<h2>Связаться с нами:</h2>
+					<p className='footer-text' onClick={handleTelegramClick}><FaTelegramPlane size={15} /> @Croha007</p>
+					<p className='footer-text' onClick={handlePhoneClick}><FaPhoneAlt size={15}/> 8-(905)-712-21-95</p>
+					<p className='footer-text'><IoIosMail size={15}/> 0_cheese_0@mail.ru</p>
+					<p className='footer-text' onClick={handleWhatsappClick}><FaWhatsapp size={15}/> 8-(905)-712-21-95</p>
+				</div>
+				<div className='separator'></div>
+				<div className='footer'>
+					<h2>Другие контакты:</h2>
+					<p className='footer-text'><FaTelegramPlane size={15} /> @istomin_portfolio</p>
+					<p className='footer-text'>Сайт сделал: <br/><FaTelegramPlane size={15} />@Kolpriks</p>
+				</div>
+			</div>
+		</div>
 	)
 }
 
