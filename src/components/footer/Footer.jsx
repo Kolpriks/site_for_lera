@@ -16,9 +16,10 @@ const Footer = () => {
 			window.location.href = 'https://api.whatsapp.com/send?phone=79057122195';
 	};
 
-	const handleTelegramClick = () => {
-			window.location.href = 'https://t.me/Croha007';
+	const handleTelegramClick = (username) => {
+		window.location.href = `https://t.me/${username}`;
 	};
+
 	return (
 		<div className='footer__wrap' id='footer'>
 			<div className='footer-container'>
@@ -32,8 +33,8 @@ const Footer = () => {
 				<div className='separator'></div>
 				<div className='footer'>
 					<h2>Другие контакты:</h2>
-					<p className='footer-text'><FaTelegramPlane size={15} /> @istomin_portfolio</p>
-					<p className='footer-text'>Сайт сделал: <br/><FaTelegramPlane size={15} />@Kolpriks</p>
+					<p className='footer-text' onClick={() => handleTelegramClick('istomin_portfolio')}><FaTelegramPlane size={15} /> @istomin_portfolio</p>
+					<p className='footer-text'>Сайт сделал: <br/><p className='footer-text' onClick={() => handleTelegramClick('Kolpriks')}><FaTelegramPlane size={15} />@Kolpriks</p></p>
 				</div>
 			</div>
 		</div>

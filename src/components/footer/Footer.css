@@ -37,10 +37,12 @@
 	font-size: 18px;
 	text-wrap: none;
 	font-family: 'Open Sans', sans-serif;
+	white-space: nowrap;
 	@media (max-width: 500px){
-		font-size: 14px;
+			font-size: 14px;
 	}
 }
+
 
 .separator {
 	width: 2px;
