@@ -70,7 +70,7 @@
 		width: 300px !important;
 		height: 500px !important;
 	}
-	@media (max-width: 300px){
+	@media (max-width: 320px){
 		width: 200px !important;
 		height: 335px !important;
 	}
@@ -98,7 +98,7 @@
 		width: 300px !important;
 		height: 500px !important;
 	}
-	@media (max-width: 300px){
+	@media (max-width: 320px){
 		width: 200px !important;
 		height: 335px !important;
 	}
@@ -118,7 +118,7 @@
 		@media (max-width: 830px){
 			font-size: 25px;
 		}
-		@media (max-width: 300px){
+		@media (max-width: 320px){
 			font-size: 16px;
 		}
 	}
@@ -206,3 +206,10 @@
 }
 
 
+.ps{
+	font-size: 22px;
+	padding-top: 50px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+}

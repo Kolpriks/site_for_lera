@@ -40,7 +40,7 @@ const Team = () => {
 				их достоинства' frame={leftTextFrame} />
 			</div>
 			<div className='team-right-card'>
-				<TeamTextCard name='Валерия' position='Продюссер' 
+				<TeamTextCard name='Валерия' position='Продюсер' 
 				description='Быстро и качественно 
 				выйдет на связь, 
 				проведет бриф и сделает совместную 
