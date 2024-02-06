@@ -4,6 +4,7 @@ import logo from '../images/logo4.png'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import MainButton from './buttons/MainButton'
 import { Link, animateScroll as scroll } from 'react-scroll';
+import Preloader from './preloader/Preloader';
 
 export const Header = () => {
 	
@@ -36,6 +37,7 @@ export const Header = () => {
 
 	return (
 	<div className='container'>
+		<Preloader/>
 		<div className='header_photo'>
 			<div className='navigation__wrapper'>
 				<img src={logo} className='logo-mobile' />
