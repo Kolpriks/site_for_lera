@@ -68,6 +68,12 @@
   text-align: center;
   animation: fadeInOut 2s ease-in-out forwards;
 	text-transform: uppercase;
+	@media (max-width: 800px){
+		font-size: 50px;
+	}
+	@media (max-width: 400px){
+		font-size: 35px;
+	}
 }
 
 @keyframes fadeInOut {
