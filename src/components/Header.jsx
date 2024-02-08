@@ -9,15 +9,33 @@ import Preloader from './preloader/Preloader';
 export const Header = () => {
 	
 	const [modalActive, setModalActive] = useState(false)
-
 	const [nav, setNav] = useState(false);
-
-
-
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 	const ulClasses = windowWidth > 800 ? 'menu' : 'mobile-menu';
 	const finalUlClasses = ulClasses === 'mobile-menu' && nav ? `${ulClasses} active` : ulClasses;
+	const [buttonColor, setButtonColor] = useState('black');
 
+	useEffect(() => {
+			const handleScroll = () => {
+					const header = document.querySelector('.header_photo');
+					const button = document.querySelector('.mobile-btn');
+
+					const headerRect = header.getBoundingClientRect();
+					const buttonRect = button.getBoundingClientRect();
+
+					if (headerRect.bottom > buttonRect.top) {
+							setButtonColor('white');
+					} else {
+							setButtonColor('black');
+					}
+			};
+
+			window.addEventListener('scroll', handleScroll);
+
+			return () => {
+					window.removeEventListener('scroll', handleScroll);
+			};
+	}, []);
 
 	useEffect(() => {
 		const handleResize = () => {
@@ -66,7 +84,7 @@ export const Header = () => {
 				</ul>
 
 				<div className={nav ? ['mobile-btn', 'mobile-btn-active'].join(' ') : ['mobile-btn']} onClick={() => setNav(!nav)}>
-					{nav ? <AiOutlineClose size={50} /> : <AiOutlineMenu size={50} />}
+						{nav ? <AiOutlineClose size={50} /> : <AiOutlineMenu size={50} style={{ color: buttonColor }} />} 
 				</div>
 			</div>
 
