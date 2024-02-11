@@ -5,7 +5,7 @@ import rightPhotoFrame from './images/black_frame.svg';
 import leftPhotoFrame from './images/orange_frame.svg';
 import rigthTextFrame from './images/orange-top-bottom-text.svg';
 import leftTextFrame from './images/black-top-bottom-text.svg';
-import photoBogdan from './images/photoBordan.png'
+import photoBogdan from './images/bogdanPhoto.jpg'
 import photoLera from './images/photoLera.png'
 import photoAnna from './images/photoAnna.png'
 import TeamTextCard from './TeamTextCard'
