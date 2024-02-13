@@ -1,0 +1,47 @@
+/* Portfolio.module.css */
+
+.portfolioContainerWrap {
+  margin-top: 200px;
+}
+
+
+.portfolioContainerWrap h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 1700px){
+  .portfolioContainerWrap h1 {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 1200px){
+  .portfolioContainerWrap h1 {
+    font-size: 30px;
+  }
+}
+
+.portfolioContainer {
+  margin-top: 10px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (max-width: 801px){
+  .portfolioContainer {
+    flex-direction: column;
+    max-width: 80%;
+    margin: auto;
+    gap: 20px;
+    padding-top: 20px;
+  }
+}

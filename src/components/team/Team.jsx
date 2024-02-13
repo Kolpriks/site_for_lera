@@ -1,58 +1,51 @@
-import React from 'react'
-import './Team.css'
-
-import rightPhotoFrame from './images/black_frame.svg';
-import leftPhotoFrame from './images/orange_frame.svg';
-import rigthTextFrame from './images/orange-top-bottom-text.svg';
-import leftTextFrame from './images/black-top-bottom-text.svg';
-import photoBogdan from './images/bogdanPhoto.jpg'
-import photoLera from './images/photoLera.png'
-import photoAnna from './images/photoAnna.png'
+import React from 'react';
+import styles from '../../styles/Team.module.css';
+import Image from 'next/image'; // Импортируем компонент Image из next/image
 import TeamTextCard from './TeamTextCard'
-import TeamPhotoCard from './TeamPhotoCard';
-
-import left_bottom_corner from './images/left-bottom-orange-corner.svg'
-import left_top_corner from './images/left-top-black-corner.svg'
-import rigth_top_corner from './images/rigth_top_corner.svg'
-import rigth_bottom_corner from './images/rigth_bottom_corner.svg'
+import TeamPhotoCard from './TeamPhotoCard'
 
 const Team = () => {
-	return (
-		<div className='team-container' id='team'>
-			<div className="position-relative">
-				<img className="corner-image top-left" src={left_top_corner} alt="top-left" />
-				<img className="corner-image top-right" src={rigth_top_corner} alt="top-right" />
-			</div>
-			<h2>команда</h2>
-			<div className='team-right-card'>
-				<TeamTextCard name='Богдан' position='Оператор' 
-				description='Профессионал, который 
-				сделает вам потрясающие 
-				фотокарточки и отретуширует 
-				всё по красоте' frame={rigthTextFrame} />
-				<TeamPhotoCard photo={photoBogdan} frame={rightPhotoFrame}/>
-			</div>
-			<div className='team-left-card'>
-				<TeamPhotoCard photo={photoAnna} frame={leftPhotoFrame}/>
-				<TeamTextCard name='Анна' position='Визажист' 
-				description='поможет моделям стать 
-				ещё более обворожительными и подчеркнет 
-				их достоинства' frame={leftTextFrame} />
-			</div>
-			<div className='team-right-card'>
-				<TeamTextCard name='Валерия' position='Продюсер' 
-				description='Быстро и качественно 
-				выйдет на связь, 
-				проведет бриф и сделает совместную 
-				работу комфортнее' frame={rigthTextFrame} />
-				<TeamPhotoCard photo={photoLera} frame={rightPhotoFrame}/>
-			</div>
-			<div className="position-relative">
-				<img className="corner-image bottom-left" src={left_bottom_corner} alt="bottom-left" />
-				<img className="corner-image bottom-right" src={rigth_bottom_corner}  alt="bottom-right" />
-			</div>
-		</div>
-	)
+    return (
+        <div className={styles.teamContainer} id='team'>
+            <div className={styles.positionRelative}>
+                {/* Используем компонент Image для отображения изображений */}
+								<Image className={`${styles.cornerImage} ${styles.topLeft}`} src="/TeamImages/left-top-black-corner.svg" alt="top-left" width={100} height={100} />
+								<Image className={`${styles.cornerImage} ${styles.topRight}`} src="/TeamImages/rigth_top_corner.svg" alt="top-right" width={100} height={100} />
+            </div>
+            <h2>команда</h2>
+            <div className={styles.teamRightCard}>
+                {/* Используем компонент Image для отображения изображений */}
+                <TeamTextCard name='Богдан' position='Оператор' 
+                    description='Профессионал, который 
+                    сделает вам потрясающие 
+                    фотокарточки и отретуширует 
+                    всё по красоте' frame="/TeamImages/orange-top-bottom-text.svg" />
+                <TeamPhotoCard photo="/TeamImages/bogdanPhoto.jpg" frame="/TeamImages/black_frame.svg"/>
+            </div>
+            <div className={styles.teamLeftCard}>
+                {/* Используем компонент Image для отображения изображений */}
+                <TeamPhotoCard photo="/TeamImages/photoAnna.png" frame="/TeamImages/orange_frame.svg"/>
+                <TeamTextCard name='Анна' position='Визажист' 
+                    description='поможет моделям стать 
+                    ещё более обворожительными и подчеркнет 
+                    их достоинства' frame="/TeamImages/black-top-bottom-text.svg" />
+            </div>
+            <div className={styles.teamRightCard}>
+                {/* Используем компонент Image для отображения изображений */}
+                <TeamTextCard name='Валерия' position='Продюсер' 
+                    description='Быстро и качественно 
+                    выйдет на связь, 
+                    проведет бриф и сделает совместную 
+                    работу комфортнее' frame="/TeamImages/orange-top-bottom-text.svg" />
+                <TeamPhotoCard photo="/TeamImages/photoLera.png" frame="/TeamImages/black_frame.svg"/>
+            </div>
+            <div className={styles.positionRelative}>
+                {/* Используем компонент Image для отображения изображений */}
+                <Image className={`${styles.cornerImage} ${styles.bottomLeft}`} src="/TeamImages/left-bottom-orange-corner.svg" alt="bottom-left" width={100} height={100} />
+                <Image className={`${styles.cornerImage} ${styles.bottomRight}`} src="/TeamImages/rigth_bottom_corner.svg" alt="bottom-right" width={100} height={100} />
+            </div>
+        </div>
+    );
 }
 
-export default Team
+export default Team;

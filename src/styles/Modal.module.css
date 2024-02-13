@@ -1,0 +1,93 @@
+/* Modal.module.css */
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.modalActive {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal__content {
+  padding: 40px;
+  border-radius: 12px;
+  background-color: white;
+  transform: scale(0.5);
+  transition: 0.4s all;
+  z-index: 3;
+}
+
+.modalСontentActive {
+  transform: scale(1);
+}
+
+
+.modal-p {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.modal-form label {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.modal-form input {
+  margin-bottom: 30px;
+  margin-top: 10px;
+  line-height: 30px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.modal-form textarea {
+  max-width: 300px;
+  margin-bottom: 20px;
+  line-height: 40px;
+  margin-top: 10px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.modal-form button {
+  background-color: rgb(87, 201, 87);
+  border: 1px solid rgb(87, 201, 87);
+  border-radius: 8px;
+  margin: 10px 0px;
+  padding: 10px 10px;
+  transition: ease-in-out 0.3s;
+  font-size: 16px;
+}
+
+.modal-form button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.policy {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+}

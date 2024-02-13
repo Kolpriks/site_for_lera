@@ -1,0 +1,99 @@
+/* Modal.module.css */
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal__content {
+  padding: 40px;
+  border-radius: 12px;
+  background-color: white;
+  transform: scale(0.5);
+  transition: 0.4s all;
+  z-index: 3;
+}
+
+.modal__content.active {
+  transform: scale(1);
+}
+
+
+
+.rightbutton {
+  border-radius: 8px;
+  padding: 10px 20px;
+  z-index: 2;
+  font-family: 'Roboto', sans-serif;
+  transition: ease-in-out 0.5s;
+  font-size: 18px;
+}
+
+
+
+.rightbutton {
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+}
+
+.rightbutton:hover{
+  box-shadow: 1px 1px 20px 10px rgba(255, 255, 255, 0.2);
+}
+
+
+.orange-button,
+.white-button {
+  position: absolute;
+  top: 75%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(-50%);
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  max-width: 150px;
+  height: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.orange-button {
+  background-color: #FFA800;
+  color: white;
+}
+
+.orange-button:hover,
+.orange-button:active {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.white-button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.white-button:hover,
+.white-button:active {
+  background-color: #000000;
+  color: #ffffff;
+}

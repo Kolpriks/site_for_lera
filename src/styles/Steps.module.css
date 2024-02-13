@@ -1,0 +1,320 @@
+/* Steps.module.css */
+
+.stepsContainerWrap {
+  padding-top: 100px;
+}
+
+.stepsContainerWrap h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 1200px){
+  .stepsContainerWrap h1 {
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.stepsContainer {
+  max-width: 80%;
+  margin: auto;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  padding-right: 200px;
+}
+
+.step h2 {
+  color: #FFA800;
+  font-size: 40px;
+}
+
+.step p {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+@media (max-width: 1400px){
+  .step h2 {
+    font-size: 30px;
+  }
+  
+  .step p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1200px){
+  .step h2 {
+    font-size: 25px;
+  }
+  
+  .step p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 900px){
+  .step h2 {
+    font-size: 25px;
+  }
+  
+  .step p {
+    font-size: 20px;
+  }
+  
+  .step {
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .step {
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 500px){
+  .step {
+    justify-content: left;
+  }
+}
+
+.stepText {
+  padding-bottom: 50px;
+  max-width: 600px;
+}
+
+.stepText p {
+  padding-left: 22px;
+}
+
+.stepText ul {
+  font-size: 30px;
+  padding-left: 30px;
+}
+
+@media (max-width: 1400px){
+  .stepText ul {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1200px){
+  .stepText ul {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 900px){
+  .stepText ul {
+    font-size: 20px;
+  }
+}
+
+.stepSecond {
+  display: flex;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  justify-content: center;
+  padding-left: 200px;
+}
+
+.stepSecond h2 {
+  color: #FFA800;
+  font-size: 40px;
+}
+
+.stepSecond p {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+@media (max-width: 1400px){
+  .stepSecond h2 {
+    font-size: 30px;
+  }
+  
+  .stepSecond p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1200px){
+  .stepSecond h2 {
+    font-size: 25px;
+  }
+  
+  .stepSecond p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 900px){
+  .stepSecond h2 {
+    font-size: 25px;
+  }
+  
+  .stepSecond p {
+    font-size: 20px;
+  }
+  
+  .stepSecond {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .stepSecond {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 500px){
+  .stepSecond {
+    justify-content: left;
+  }
+}
+
+.stepTextSecond {
+  padding-bottom: 50px;
+  max-width: 800px;
+}
+
+.stepTextSecond p {
+  padding-left: 22px;
+}
+
+.stepTextSecond ul {
+  font-size: 30px;
+  padding-left: 52px;
+}
+
+@media (max-width: 1400px){
+  .stepTextSecond ul {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1200px){
+  .stepTextSecond ul {
+    font-size: 20px;
+    padding-left: 22px;
+  }
+}
+
+@media (max-width: 900px){
+  .stepTextSecond ul {
+    font-size: 20px;
+  }
+}
+
+.stepThird {
+  display: flex;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 700px;
+  justify-content: center;
+}
+
+.stepThird h2 {
+  color: #FFA800;
+  font-size: 40px;
+}
+
+.stepThird p {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+@media (max-width: 1400px){
+  .stepThird h2 {
+    font-size: 30px;
+  }
+  
+  .stepThird p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 900px){
+  .stepThird h2 {
+    font-size: 25px;
+  }
+  
+  .stepThird p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1200px){
+  .stepThird {
+    padding-left: 500px;
+  }
+}
+
+@media (max-width: 1000px){
+  .stepThird {
+    padding-left: 300px;
+  }
+}
+
+@media (max-width: 600px){
+  .stepThird {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 500px){
+  .stepThird {
+    padding-left: 0px;
+    justify-content: left;
+  }
+}
+
+.arrow {
+  @media (max-width: 1400px){
+    height: 400px;
+  }
+  
+  @media (max-width: 1200px){
+    height: 300px;
+  }
+  
+  @media (max-width: 900px){
+    height: 200px;
+  }
+  
+  @media (max-width: 500px){
+    display: none;
+  }
+}
+
+.arrowRight {
+  height: 500px;
+  
+  @media (max-width: 1400px){
+    height: 400px;
+  }
+  
+  @media (max-width: 1200px){
+    height: 350px;
+  }
+  
+  @media (max-width: 900px){
+    height: 250px;
+  }
+  
+  @media (max-width: 500px){
+    display: none;
+  }
+}

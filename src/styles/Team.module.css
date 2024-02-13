@@ -1,0 +1,231 @@
+/* Right card */
+
+.teamContainer {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  height: 100%;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.teamContainer h2 {
+  font-size: 50px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1200px){
+  .teamContainer h2 {
+    font-size: 30px;
+  }
+}
+
+.teamСardWrap {
+  align-items: center;
+  max-width: 500px;
+}
+
+@media (max-width: 1400px){
+  .teamCardWrap {
+    order: 1;
+  }
+}
+
+.teamCardPhotoFrame {
+  position: relative;
+}
+
+.photoContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 50px;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+}
+
+.employeePhoto {
+  max-width: 100%;
+}
+
+/* Text */
+
+.teamTextFrame {
+  display: flex;
+  max-width: 400px;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+}
+
+@media (max-width: 1400px){
+  .teamTextFrame {
+    order: 2;
+  }
+}
+
+.teamCardImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.textContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 50px;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+  color: black;
+}
+
+.textContent p {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+}
+
+@media (max-width: 1500px){
+  .textContent p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px){
+  .textContent p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 380px){
+  .textContent p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 350px){
+  .textContent p {
+    font-size: 14px;
+  }
+}
+
+/* Card Right */
+.teamRightCard {
+  max-width: 45%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-right: 150px;
+}
+
+@media (max-width: 1800px){
+  .teamRightCard {
+    max-width: 50%;
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 1400px){
+  .teamRightCard {
+    max-width: 90% !important;
+    margin-right: 0px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.teamLeftCard {
+  max-width: 45%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-left: 150px;
+  margin-bottom: -100px;
+  margin-top: -150px;
+}
+
+@media (max-width: 1800px){
+  .teamLeftCard {
+    max-width: 50%;
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 1400px){
+  .teamLeftCard {
+    flex-direction: column;
+    max-width: 90%;
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+}
+
+.accentName {
+  color: #FFA800;
+  font-size: 25px !important;
+}
+
+@media (max-width: 400px){
+  .accentName {
+    font-size: 20px !important;
+  }
+}
+
+.teamCardPosition {
+  font-style: italic;
+}
+
+
+.positionRelative {
+  position: relative;
+}
+
+.cornerImage {
+  position: absolute;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+@media (max-width: 700px){
+  .cornerImage {
+    display: none;
+  }
+}
+
+.topLeft {
+  top: 40px;
+  left: 80px;
+}
+
+.topRight {
+  top: 40px;
+  right: 80px;
+}
+
+.bottomLeft {
+  bottom: -80px;
+  left: 80px;
+}
+
+.bottomRight {
+  bottom: -80px;
+  right: 80px;
+}

@@ -1,0 +1,107 @@
+/* wrap.module.css */
+
+.wrap {
+  position: relative;
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+}
+
+.wrap h2 {
+  font-size: 50px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1200px){
+  .wrap h2 {
+    font-size: 30px;
+  }
+}
+
+.centered-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+@media (max-width: 1200px){
+  .centered-container {
+    display: none;
+  }
+}
+
+.cards {
+  display: flex;
+  max-width: 60%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+@media (max-width: 2000px){
+  .cards {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .cards {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 350px) {
+  .cards {
+    max-width: 100%;
+  }
+}
+
+.position-relative {
+  position: relative;
+}
+
+.corner-image {
+  position: absolute;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+@media (max-width: 700px){
+  .corner-image {
+    display: none;
+  }
+}
+
+.top-left {
+  top: 40px;
+  left: 80px;
+}
+
+.top-right {
+  top: 40px;
+  right: 80px;
+}
+
+.bottom-left {
+  bottom: -80px;
+  left: 80px;
+}
+
+.bottom-right {
+  bottom: -80px;
+  right: 80px;
+}

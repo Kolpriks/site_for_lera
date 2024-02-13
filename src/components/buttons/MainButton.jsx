@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Modal from './modal/Modal';
-
+import styles from '../../styles/MainButton.module.css';
 import axios from 'axios';
 
 const sendMessageToTelegram = async (chatId, message) => {
@@ -42,47 +42,46 @@ const MainButton = ({ onModalToggle, text, type }) => {
 
 	return (
 		<>
-			<button className={type} onClick={() => setModalActive(true)}>
+			<button className={styles[type]} onClick={() => setModalActive(true)}>
 				{text}
 			</button>
 
 			<Modal active={modalActive} setActive={setModalActive}>
-				<form onSubmit={handleFormSubmit} className='modal-form'>
-							<label htmlFor="name">ФИО:</label>
-							<input
-								type="text"
-								id="name"
-								value={name}
-								onChange={(e) => setName(e.target.value)}
-								placeholder='Иванов Иван'
-								required
-							/>
+				<form onSubmit={handleFormSubmit} className={styles['modal-form']}>
+					<label htmlFor="name">ФИО:</label>
+					<input
+						type="text"
+						id="name"
+						value={name}
+						onChange={(e) => setName(e.target.value)}
+						placeholder='Иванов Иван'
+						required
+					/>
 
-							<label htmlFor="phone">Телефон:</label>
-							<input
-								type="tel"
-								id="phone"
-								value={phone}
-								placeholder='+7 999 000 00 00'
-								onChange={(e) => setPhone(e.target.value)}
-								required
-							/>
+					<label htmlFor="phone">Телефон:</label>
+					<input
+						type="tel"
+						id="phone"
+						value={phone}
+						placeholder='+7 999 000 00 00'
+						onChange={(e) => setPhone(e.target.value)}
+						required
+					/>
 
-							<label htmlFor="message">Сообщение:</label>
-							<textarea
-								id="message"
-								value={message}
-								placeholder='Что будем снимать?'
-								onChange={(e) => setMessage(e.target.value)}
-							/>
+					<label htmlFor="message">Сообщение:</label>
+					<textarea
+						id="message"
+						value={message}
+						placeholder='Что будем снимать?'
+						onChange={(e) => setMessage(e.target.value)}
+					/>
 
-							<button type="submit">Отправить</button>
+					<button type="submit">Отправить</button>
 
-							<h3 className='policy'>Нажимая на кнопку, 
-							вы даете согласие на обработку своих персональных данных</h3>
-
-						</form>
-					</Modal>
+					<h3 className={styles.policy}>Нажимая на кнопку, 
+					вы даете согласие на обработку своих персональных данных</h3>
+				</form>
+			</Modal>
 		</>
 	);
 };

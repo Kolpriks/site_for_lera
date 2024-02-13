@@ -1,16 +1,17 @@
-import React from 'react'
+import React from 'react';
+import styles from '../../styles/Team.module.css';
 
-const TeamPhotoCard = ({photo, frame}) => {
-	return (
-		<div className='team-card__wrap'>
-			<div className='team-card-photo__frame'>
-				<img src={frame} alt='photo frame'/>
-				<div className='photo-content'>
-					<img src={photo} alt='employee photo' className='employee-photo' />
-				</div>
-			</div>
-		</div>
-	)
+const TeamPhotoCard = ({ photo, frame }) => {
+    return (
+        <div className={styles.teamCardWrap}>
+            <div className={styles.teamCardPhotoFrame}>
+                <img src={frame} alt='photo frame' />
+                <div className={styles.photoContent}>
+                    <img src={photo} alt='employee photo' className={styles.employeePhoto} />
+                </div>
+            </div>
+        </div>
+    );
 }
 
-export default TeamPhotoCard
+export default TeamPhotoCard;

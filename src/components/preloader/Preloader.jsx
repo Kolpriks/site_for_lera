@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Preloader.css';
+import styles from '../../styles/Preloader.module.css';
 
 const Preloader = () => {
   const [loading, setLoading] = useState(true);
@@ -13,9 +13,9 @@ const Preloader = () => {
   }, []);
 
   return (
-    <div className={`preloader ${loading ? 'show' : 'hide'}`}>
-      <div className="loader-text">PhotObject</div>
-    </div>
+    <div className={`${styles.preloader} ${loading ? styles.show : styles.hide}`}>
+				<div className={styles.loaderText}>PhotObject</div>
+		</div>
   );
 };
 
