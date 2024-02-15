@@ -102,7 +102,7 @@ export const Header = () => {
           </div>
 
           <div>
-            <ul className={styles.capability}>
+						<ul className={styles.capability}>
               <li>Предметная съемка</li>
               <li>Художественная съемка с реквизитом</li>
               <li>Съемка на модели</li>

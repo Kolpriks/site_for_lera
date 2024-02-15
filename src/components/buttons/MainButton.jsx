@@ -47,9 +47,10 @@ const MainButton = ({ onModalToggle, text, type }) => {
 			</button>
 
 			<Modal active={modalActive} setActive={setModalActive}>
-				<form onSubmit={handleFormSubmit} className={styles['modal-form']}>
-					<label htmlFor="name">ФИО:</label>
+				<form onSubmit={handleFormSubmit} className={styles.modalForm}>
+					<label className={styles.label} htmlFor="name">ФИО:</label>
 					<input
+						className={styles.input}
 						type="text"
 						id="name"
 						value={name}
@@ -58,8 +59,9 @@ const MainButton = ({ onModalToggle, text, type }) => {
 						required
 					/>
 
-					<label htmlFor="phone">Телефон:</label>
+					<label className={styles.label} htmlFor="phone">Телефон:</label>
 					<input
+						className={styles.input}
 						type="tel"
 						id="phone"
 						value={phone}
@@ -68,15 +70,16 @@ const MainButton = ({ onModalToggle, text, type }) => {
 						required
 					/>
 
-					<label htmlFor="message">Сообщение:</label>
+					<label className={styles.label} htmlFor="message">Сообщение:</label>
 					<textarea
+						className={styles.textarea}
 						id="message"
 						value={message}
 						placeholder='Что будем снимать?'
 						onChange={(e) => setMessage(e.target.value)}
 					/>
 
-					<button type="submit">Отправить</button>
+					<button className={styles.button} type="submit">Отправить</button>
 
 					<h3 className={styles.policy}>Нажимая на кнопку, 
 					вы даете согласие на обработку своих персональных данных</h3>

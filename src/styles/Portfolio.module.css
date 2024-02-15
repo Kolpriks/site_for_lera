@@ -4,7 +4,6 @@
   margin-top: 200px;
 }
 
-
 .portfolioContainerWrap h1 {
   text-align: center;
   font-size: 50px;
@@ -26,22 +25,19 @@
   }
 }
 
-.portfolioContainer {
-  margin-top: 10px;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-@media (max-width: 801px){
-  .portfolioContainer {
-    flex-direction: column;
-    max-width: 80%;
-    margin: auto;
-    gap: 20px;
-    padding-top: 20px;
-  }
+.portfolioContainer{
+	margin-top: 10px;
+	display: flex;
+	position: relative;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	@media (max-width: 801px){
+		flex-direction: column;
+		max-width: 80%;
+		margin: auto;
+		gap: 20px;
+		padding-top: 20px;
+	}
 }
