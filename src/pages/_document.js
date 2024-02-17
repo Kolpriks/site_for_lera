@@ -19,6 +19,7 @@ class MyDocument extends Document {
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet" />
           <link rel="stylesheet" href="/index.css" /> {/* Убедитесь, что путь к CSS-файлу корректный */}
           <meta name="keywords" content="photo object предмет съемка предметная съемка фотография фото" />
+					<meta name="description" content="Компания занимается производством фото для торговых площадок, созданием каталожных изображений"/>
 					<title>PhotObject</title>
         </Head>
         <body>
