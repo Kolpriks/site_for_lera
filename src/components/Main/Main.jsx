@@ -90,7 +90,7 @@ const Main = () => {
                 </div>
             </div>
             <div className={styles.mainTextWrap}>
-                <p className={styles.mainText}>Фото для торговых площадок, создание каталожных изображений</p>
+                <h2 className={styles.mainText}>Фото для торговых площадок, создание каталожных изображений</h2>
             </div>
             <div className={styles.capabilityWrap}>
                 <ul className={styles.capability}>

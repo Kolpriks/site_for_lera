@@ -12,7 +12,7 @@ const Team = () => {
 								<Image className={`${styles.cornerImage} ${styles.topLeft}`} src="/TeamImages/left-top-black-corner.svg" alt="top-left" width={100} height={100} />
 								<Image className={`${styles.cornerImage} ${styles.topRight}`} src="/TeamImages/rigth_top_corner.svg" alt="top-right" width={100} height={100} />
             </div>
-            <h2>команда</h2>
+            <h1>команда</h1>
             <div className={styles.teamRightCard}>
                
                 <TeamTextCard name='Богдан' position='Оператор' 

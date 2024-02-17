@@ -29,7 +29,7 @@ const WhyUs = () => {
                 <Image className={`${styles['corner-image']} ${styles['top-right']}`} src={rigth_top_corner} alt="top-right" />
             </div>
 
-            <h2>Почему мы?</h2>
+            <h1>Почему мы?</h1>
 
             <div className={`${styles.cards} ${styles['cards-top']}`}>
                 <WhyUsCard text1={textTwoAccent} text2={textTwo} frame={svgFrame} />

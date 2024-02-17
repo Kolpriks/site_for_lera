@@ -10,7 +10,7 @@
   text-align: center;
 }
 
-.teamContainer h2 {
+.teamContainer h1 {
   font-size: 50px;
   padding-top: 40px;
   padding-bottom: 50px;
@@ -21,7 +21,7 @@
 }
 
 @media (max-width: 1200px){
-  .teamContainer h2 {
+  .teamContainer h1 {
     font-size: 30px;
   }
 }

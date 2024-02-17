@@ -14,7 +14,7 @@ const Preloader = () => {
 
   return (
     <div className={`${styles.preloader} ${loading ? styles.show : styles.hide}`}>
-				<div className={styles.loaderText}>PhotObject</div>
+				<h1 className={styles.loaderText}>PhotObject</h1>
 		</div>
   );
 };

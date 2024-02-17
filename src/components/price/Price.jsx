@@ -13,7 +13,7 @@ const Price = () => {
 
     return (
         <div className={styles.priceContainerWrap} id='price'>
-            <h2>Прайс</h2>
+            <h1>Прайс</h1>
             <div className={styles.priceContainer}>
                 {priceData.map((price) => (
                     <div className={styles.priceCard} key={price.id}>
