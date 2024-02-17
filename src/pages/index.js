@@ -5,13 +5,12 @@ import Price from "../components/price/Price";
 import Steps from "../components/steps/Steps";
 import Team from "../components/team/Team";
 import WhyAs from "../components/whyus/WhyUs";
-import Main from  '../components/Main/Main'
+import MainPage from  '../components/MainPage/MainPage'
 
 export default function Home() {
 	return (
 		<div className="All">
-			<Main/>
-
+			<MainPage/>
 			<WhyAs/>
 			<Portfolio/>
 			<Steps/>

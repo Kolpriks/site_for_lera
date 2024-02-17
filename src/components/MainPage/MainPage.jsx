@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import styles from '../../styles/Main.module.css';
+import styles from '../../styles/MainPage.module.css';
 import Image from 'next/image';
 import { Link } from 'react-scroll';
 import MainButton from '../buttons/MainButton';
@@ -33,6 +33,7 @@ const Main = () => {
 
     return (
 			<div ref={mainRef} className={`${styles.mainContainer} ${isScrolled ? styles.scrolled : ''}`}>
+				
             <div
                 className={styles.mainPhotoBg}
                 style={{
