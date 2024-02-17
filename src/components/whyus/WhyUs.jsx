@@ -2,12 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 import styles from '../../styles/WhyUs.module.css';
 import WhyUsCard from './whyuscard/WhyUsCard';
-import svgFrame from '../../components/header/images/frame.svg';
-import whyUsLogo from '../../components/header/images/whyuslogo.png';
-import left_bottom_corner from '../../components/header/images/left-bottom-orange-corner.svg';
-import left_top_corner from '../../components/header/images/left-top-black-corner.svg';
-import rigth_top_corner from '../../components/header/images/rigth_top_corner.svg';
-import rigth_bottom_corner from '../../components/header/images/rigth_bottom_corner.svg';
+import svgFrame from '../../../public/images/frame.svg';
+import whyUsLogo from '../../../public/images/whyuslogo.png';
+import left_bottom_corner from '../../../public/images/left-bottom-orange-corner.svg';
+import left_top_corner from '../../../public/images/left-top-black-corner.svg';
+import rigth_top_corner from '../../../public/images/rigth_top_corner.svg';
+import rigth_bottom_corner from '../../../public/images/rigth_bottom_corner.svg';
 
 const WhyUs = () => {
     const textOneAccent = 'Современное оборудование и технологии';

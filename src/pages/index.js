@@ -11,6 +11,7 @@ export default function Home() {
 	return (
 		<div className="All">
 			<Main/>
+
 			<WhyAs/>
 			<Portfolio/>
 			<Steps/>

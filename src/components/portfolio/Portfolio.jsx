@@ -146,11 +146,11 @@ const Portfolio = () => {
                 </div>
             ))}
 						<div className={styles.smallScreen}>
-							<img src={photos[0]}/>
-							<img src={photos[1]}/>
-							<img src={photos[2]}/>
-							<img src={photos[3]}/>
-							<img src={photos[4]}/>
+							<img src={photos[0]} alt='primer photo'/>
+							<img src={photos[1]} alt='primer photo'/>
+							<img src={photos[2]} alt='primer photo'/>
+							<img src={photos[3]} alt='primer photo'/>
+							<img src={photos[4]} alt='primer photo'/>
 						</div>
         </div>
     );

@@ -26,19 +26,20 @@ const MainButton = ({ onModalToggle, text, type }) => {
 	const [message, setMessage] = useState('');
 
 	const handleFormSubmit = async (e) => {
-		e.preventDefault();
+    e.preventDefault();
 
-		const chatId = '-4128263263';
-		const fullMessage = `Новый заказ:\nФИО: ${name}\nТелефон: ${phone}\nСообщение: ${message}`;
+    const chatId = '-4128263263';
+    const fullMessage = `Новый заказ:\nФИО: ${name}\nТелефон: ${phone}\nСообщение: ${message}`;
 
-		await sendMessageToTelegram(chatId, fullMessage);
+    await sendMessageToTelegram(chatId, fullMessage);
 
-		setName('');
-		setPhone('');
-		setMessage('');
-		setModalActive(false);
-		onModalToggle(false);
+    setName('');
+    setPhone('');
+    setMessage('');
+    setModalActive(false);
 	};
+
+
 
 	return (
 		<>

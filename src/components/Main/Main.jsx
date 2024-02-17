@@ -6,19 +6,21 @@ import MainButton from '../buttons/MainButton';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 const Main = () => {
-    const [nav, setNav] = useState(false);
-    const [isScrolled, setIsScrolled] = useState(false);
-		const mainRef = useRef(null);
+	const [nav, setNav] = useState(false);
+	const [isScrolled, setIsScrolled] = useState(false);
+	const [modalActive, setModalActive] = useState(false); // Добавляем состояние для управления модальным окном
+	const mainRef = useRef(null);
 
-    const closeNav = () => {
-        setNav(false);
-    };
-		useEffect(() => {
+	const closeNav = () => {
+			setNav(false);
+	};
+
+	useEffect(() => {
 			const handleScroll = () => {
 					const mainBlock = mainRef.current;
 					const scrollTop = window.scrollY;
 					const mainBottom = mainBlock.offsetTop + mainBlock.clientHeight;
-					const threshold = 50; 
+					const threshold = 50;
 					setIsScrolled(scrollTop > mainBottom - threshold);
 			};
 
@@ -45,10 +47,11 @@ const Main = () => {
             ></div>
             <Image
                 className={styles.mainPhotoBg}
-                src="/mainImages/header_photo_example_pink.jpg"
+                src="/mainImages/header_photo_example_pink_shrinked.jpg"
                 layout="fill"
                 objectFit="cover"
                 objectPosition="center"
+								alt='background image'
             />
             <div className={styles.nav}>
                 {/* Desktop navigation */}
@@ -61,7 +64,7 @@ const Main = () => {
                     </Link>
                 </div>
                 <div className={styles.logo}>
-                    <Image src="/mainImages/logo4.png" width="250" height="250" />
+                    <Image src="/mainImages/logo4.png" width="250" height="250" alt='logo'/>
                 </div>
                 <div className={styles.desktopNav}>
                     <Link to="team" smooth={true} duration={1000} className={styles.navButton}>
@@ -75,7 +78,7 @@ const Main = () => {
                 {/* Mobile navigation */}
                 <div className={styles.mobileNav}>
                     <div className={styles.mobileLogo}>
-                        <Image src="/mainImages/logo4.png" width="150" height="150" />
+                        <Image src="/mainImages/logo4.png" width="150" height="150" alt='logo'/>
                     </div>
                     <div
                         className={`${styles.mobileBtn} ${nav ? styles.mobileBtnActive : ''}`}
