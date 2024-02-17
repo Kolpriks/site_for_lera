@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+// import icon from '../../public/favicon/camera_3102212.png'
 
 class MyDocument extends Document {
   render() {
@@ -10,14 +11,14 @@ class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-          <link rel="icon" href="/favicon_camera.png" /> {/* Убедитесь, что путь к иконке корректный */}
+          <link rel="icon" href="/favicon/camera_504643.png" />
+
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet" />
-          <link rel="stylesheet" href="/index.css" /> {/* Убедитесь, что путь к CSS-файлу корректный */}
           <meta name="keywords" content="photo object предмет съемка предметная съемка фотография фото" />
 					<meta name="description" content="Компания занимается производством фото для торговых площадок, созданием каталожных изображений"/>
 					<title>PhotObject</title>
