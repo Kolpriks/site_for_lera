@@ -29,8 +29,8 @@ const Footer = () => {
                 <div className={styles.separator}></div>
                 <div className={styles.footer}>
                     <h2>Другие контакты:</h2>
-                    <p className={styles.footerText} onClick={() => handleTelegramClick('istomin_portfolio')}><FaTelegramPlane size={15} /> @istomin_portfolio</p>
-                    <p className={styles.footerText}>Сайт сделал: <br/><Link  href="https://t.me/Kolpriks" legacyBehavior><a target='_blank' className={styles.footerText}><FaTelegramPlane size={15} />@Kolpriks</a></Link></p>
+                    <p className={styles.footerText}>Оператор: <br/></p> <p className={styles.footerText} onClick={() => handleTelegramClick('istomin_portfolio')}><FaTelegramPlane size={15} /> @istomin_portfolio</p>
+                    <p className={styles.footerText}>Сайт сделал: <br/></p><p className={styles.footerText} onClick={() => handleTelegramClick('Kolpriks')}><FaTelegramPlane size={15} /> @Kolpriks</p>
                 </div>
             </div>
         </div>

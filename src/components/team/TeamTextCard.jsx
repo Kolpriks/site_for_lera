@@ -1,14 +1,14 @@
 import React from 'react';
-import styles from '../../styles/Team.module.css'; // Импортируем модуль CSS
+import styles from '../../styles/Team.module.css';
 
 const TeamTextCard = ({ name, position, description, frame }) => {
     return (
-        <div className={styles.teamTextFrame}> {/* Используем стили из модуля CSS */}
-            <img src={frame} alt='text frame' className={styles.teamCardImg} /> {/* Используем стили из модуля CSS */}
-            <div className={styles.textContent}> {/* Используем стили из модуля CSS */}
-                <p className={styles.accentName}>{name}</p> {/* Используем стили из модуля CSS */}
-                <p className={styles.teamCardPosition}>{position}</p> {/* Используем стили из модуля CSS */}
-                <p className={styles.teamCardDescription}>{description}</p> {/* Используем стили из модуля CSS */}
+        <div className={styles.teamTextFrame}>
+            <img src={frame} alt='text frame' className={styles.teamCardImg} />
+            <div className={styles.textContent}>
+                <p className={styles.accentName}>{name}</p>
+                <p className={styles.teamCardPosition}>{position}</p>
+                <p className={styles.teamCardDescription}>{description}</p>
             </div>
         </div>
     );

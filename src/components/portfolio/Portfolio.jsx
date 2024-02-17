@@ -145,6 +145,13 @@ const Portfolio = () => {
                     ))}
                 </div>
             ))}
+						<div className={styles.smallScreen}>
+							<img src={photos[0]}/>
+							<img src={photos[1]}/>
+							<img src={photos[2]}/>
+							<img src={photos[3]}/>
+							<img src={photos[4]}/>
+						</div>
         </div>
     );
 };

@@ -76,6 +76,10 @@
 		padding-top: 10px;
 		max-width: 70%;
 	}
+	@media (max-width: 400px){
+		padding-top: 10px;
+		max-width: 95%;
+	}
 }
 
 .mainText{
@@ -92,6 +96,9 @@
 	text-transform: uppercase;
 	@media (max-width: 800px){
 		font-size: 30px;
+	}
+	@media (max-width: 400px){
+		font-size: 25px;
 	}
 }
 
@@ -273,7 +280,7 @@
 
 .mobileBtn{
 	display: none;
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	position: fixed;
 	right: 40px;
 	top: 40px;
@@ -283,6 +290,11 @@
 		display: flex;
 	}
 }
+
+.scrolled .mobileBtn {
+	color: black;
+}
+
 
 .mobileBtnActive{
 	color: black;

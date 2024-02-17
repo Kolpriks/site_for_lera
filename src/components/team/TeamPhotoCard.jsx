@@ -5,7 +5,7 @@ const TeamPhotoCard = ({ photo, frame }) => {
     return (
         <div className={styles.teamCardWrap}>
             <div className={styles.teamCardPhotoFrame}>
-                <img src={frame} alt='photo frame' />
+                <img src={frame} alt='photo frame' className={styles.frame} />
                 <div className={styles.photoContent}>
                     <img src={photo} alt='employee photo' className={styles.employeePhoto} />
                 </div>

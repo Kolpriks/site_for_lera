@@ -11,6 +11,7 @@
   color: black;
   font-family: 'Open Sans', sans-serif;
   padding-bottom: 50px;
+	font-weight: 400;
 }
 
 @media (max-width: 1200px){
